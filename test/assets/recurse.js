@@ -1,0 +1,11 @@
+common();
+'@flag_start(A)'
+codeInFlagA();
+    '@flag_start(B)'
+    codeInFlagB();
+    '@flag_end'
+'@flag_end'
+'@flag_start(C)'
+codeInFlagC();
+'@flag_end'
+commonElse();

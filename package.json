@@ -1,0 +1,20 @@
+{
+  "name": "feature-flag",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "babylon": "^6.16.1",
+    "babylon-walk": "^1.0.2",
+    "glob": "^7.1.1",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  }
+}
