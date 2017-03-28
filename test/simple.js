@@ -4,7 +4,7 @@ const path = require('path');
 
 const parse = require('../lib/parse');
 const detect = require('../lib/detect');
-const transform = require('../lib/transformFile');
+const transform = require('../lib/transform');
 const featureFlag = require('../index');
 
 const simplePath = path.resolve(__dirname, './assets/simple.js');

@@ -1,6 +1,6 @@
 const parse = require('./lib/parse');
 const detect = require('./lib/detect');
-const transform = require('./lib/transformFile');
+const transform = require('./lib/transform');
 
 module.exports = function (text, rules) {
     const flags = parse(text)
