@@ -6,7 +6,17 @@
 
 ```
 featureFlag = require('feature-flag');
-const transformText = featureFlag(code, rules);
+const transformText = featureFlag(code, rules, options);
+```
+
+### options
+
+可以自定义 babel 解析的配置参数, 默认为
+```
+{
+    presets: ['react', 'es2015', 'stage-0'],
+    plugins: ['transform-decorators-legacy'],
+}
 ```
 
 ### Code
