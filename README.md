@@ -2,10 +2,16 @@
 
 根据配置项控制代码是否执行
 
+## Install
+
+```
+npm i -D feat-flag
+```
+
 ## Usage
 
 ```
-featureFlag = require('feature-flag');
+featureFlag = require('feat-flag');
 const transformText = featureFlag(code, rules, options);
 ```
 
