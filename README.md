@@ -19,6 +19,10 @@ const transformText = featureFlag(code, rules, options);
 }
 ```
 
+The current version move all `babel-preset-\*` and `babel-plugin-\*` from `dependencies` to `devDependencies`
+
+ENSURE you import them by your self.
+
 ### Code
 
 需要 flag 开关的代码包裹在 `'@flag_start({条件})'` 和 `'@flag_end'`之间
@@ -48,3 +52,9 @@ commonElse();
     C: true
 }
 ```
+
+## TODO
+
+English readme
+
+Read `.babelrc` first, if options don't configure
