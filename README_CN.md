@@ -1,6 +1,6 @@
 # Feature flag
 
-Launch code execute by rules
+根据配置项控制代码是否执行
 
 ## Install
 
@@ -17,27 +17,23 @@ const transformText = featureFlag(code, rules, options);
 
 ### options
 
-custom `babel` presets & plugins
-
-e.g:
-
+可以自定义 babel 解析的配置参数, 例如
 ```
 {
     presets: ['react', 'es2015', 'stage-0'],
     plugins: ['transform-decorators-legacy'],
 }
 ```
-It will read project's `.babelrc` file if you don't set options.
 
-The current version move all `babel-preset-\*` and `babel-plugin-\*` from `dependencies` to `devDependencies`
+如果没有指定 options, 程序将默认读取项目根目录的 .babelrc 配置
 
-ENSURE you import them by your self.
+当前版本移除了所有 babel preset 和 plugin 的依赖, 你需要手动的引入它们
 
 ### Code
 
-Wrap code between `'@flag_start({condition})'` and `'@flag_end'`.
+需要 flag 开关的代码包裹在 `'@flag_start({条件})'` 和 `'@flag_end'`之间
 
-e.g:
+例如:
 
 ```
 common();
@@ -49,11 +45,11 @@ commonElse();
 
 ### Condition
 
-Support `&&`, `||`, `!`
+支持 `&&`, `||`, `!` 三种运算符
 
 ### Rules
 
-Rules is a json object, like:
+规则为一个 json 对象, 例如
 
 ```
 {
